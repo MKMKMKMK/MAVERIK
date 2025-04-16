@@ -11,7 +11,7 @@
     <img src="assets/logo.png" alt="MAVERIK Logo" class="logo" />
     <h1>We Build, Fix & Elevate Websites</h1>
     <p>Your bridge to high-performing, beautiful websites.</p>
-    <a href="#contact" class="cta">Let's Talk</a>
+    <a href="#contact" class="cta">Let's Talk</a> 
   </header>
 
   <section class="section" id="services">
