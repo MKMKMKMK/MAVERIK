@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAVERIK | Digital Web Agency</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="assets/logo.png" alt="MAVERIK Logo" class="logo" />
+    <h1>We Build, Fix & Elevate Websites</h1>
+    <p>Your bridge to high-performing, beautiful websites.</p>
+    <a href="#contact" class="cta">Let's Talk</a>
+  </header>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Website Creation</h3>
+        <p>We launch fully functional sites using modern tools tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <h3>Website Edits</h3>
+        <p>Quick changes, big improvements. We update and upgrade your existing site.</p>
+      </div>
+      <div class="card">
+        <h3>Site Optimization</h3>
+        <p>Speed, SEO, mobile-friendliness—we make sure it all runs smooth and fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="how">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">1. Tell us what you need</div>
+      <div class="step">2. We find the right tools or talent</div>
+      <div class="step">3. You get polished results</div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:hello@maverikagency.com">hello@maverikagency.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 MAVERIK. All rights reserved.</p>
+  </footer>
+</body>
+</html>

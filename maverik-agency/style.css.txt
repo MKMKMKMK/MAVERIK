@@ -1,0 +1,132 @@
+/* Font and Color Setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --black: #000;
+  --navy: #0a1e3f;
+  --grey: #7a7a7a;
+  --white: #fff;
+  --accent: #0077ff;
+}
+
+/* Hero Section */
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.cta {
+  background: var(--white);
+  color: var(--navy);
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--white);
+  transition: background 0.3s;
+}
+
+.section.dark {
+  background: #f0f0f0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.step {
+  padding: 15px;
+  background: var(--white);
+  border-left: 5px solid var(--navy);
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
