@@ -1,0 +1,145 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+section {
+  padding: 80px 5% 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #000000, #1c1f2b);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Clients */
+.clients h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: grid;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.testimonial {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Services */
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background: #202020;
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  background: #2a2f3a;
+}
+
+/* Contact */
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: #49baff;
+  text-decoration: none;
+}
+
+/* Chatbot */
+.chatbot-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.chatbot-icon:hover {
+  background: #dedede;
+}
+
+.chatbot {
+  display: none;
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  width: 350px;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.chatbot.show {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  .chatbot {
+    width: 90%;
+    height: 450px;
+  }
+}
